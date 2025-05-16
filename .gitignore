@@ -60,3 +60,4 @@ nunit-*.xml
 /.vs/slnx.sqlite
 /.vs/VSWorkspaceState.json
 /CollectionManager.FrontEnd/CollectionManager.Angular/.vscode
+/CollectionManager.Backend/.vs/CollectionManager.Backend
