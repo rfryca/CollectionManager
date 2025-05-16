@@ -53,3 +53,10 @@ CodeCoverage/
 TestResult.xml
 nunit-*.xml
 /.vs/CollectionManager
+/.vs/CollectionManager/CopilotIndices/17.14.670.39694/CodeChunks.db
+/.vs/CollectionManager/CopilotIndices/17.14.670.39694/SemanticSymbols.db
+/.vs/CollectionManager/v17/.wsuo
+/.vs/CollectionManager/v17/DocumentLayout.json
+/.vs/slnx.sqlite
+/.vs/VSWorkspaceState.json
+/CollectionManager.FrontEnd/CollectionManager.Angular/.vscode
