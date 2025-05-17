@@ -4,6 +4,16 @@
   "newProjectRoot": "projects",
   "projects": {
     "CollectionManager.Angular": {
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          
+          "pl": {
+            "translation": "src/locale/messages.pl.xlf"
+           
+          }
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -41,11 +51,15 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "localize": [
+              "pl"
+            ],
             "outputPath": "dist/collection-manager.angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
-              "zone.js"
+              "zone.js",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
@@ -58,7 +72,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/tw-elements/js/tw-elements.umd.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -104,7 +120,8 @@
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing"
+              "zone.js/testing",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
@@ -117,7 +134,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/tw-elements/js/tw-elements.umd.min.js"
+            ]
           }
         }
       }

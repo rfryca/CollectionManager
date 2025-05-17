@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+//@import "tailwindcss";
+//@import "../node_modules/tw-elements/css/tw-elements.min.css";
+
+@use "tailwindcss";
+@use "../node_modules/tw-elements/css/tw-elements.min.css";
